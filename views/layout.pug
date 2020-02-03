@@ -1,0 +1,21 @@
+doctype html
+html
+    head
+        meta(http-equiv="Content-Type", content="text/html; charset=utf-8")
+        title matrix-blog
+        //link(rel="shortcut icon", href="/favicon.ico")
+        block scripts
+            script(type="module").
+                import ComponentLoader from "/js/ComponentLoader.js";
+                import App from "/js/components/!{component}/App";
+                window.onload = () => ComponentLoader.load(App);
+
+    body
+        #wrapper
+            #header
+                a(href="/") matrix-blog
+            #content
+                block content
+            #footer
+                | Copyright © 2020 matrix-blog ·
+                a(href="https://github.com/Yurifag/matrix-blog") GitHub
