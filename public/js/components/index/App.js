@@ -1,4 +1,4 @@
-import "/preact";
+import * as preact from "/preact";
 import Component from "../Component";
 
 export default class App extends Component {
@@ -6,11 +6,13 @@ export default class App extends Component {
         super(props);
     }
 
-    componentDidMount() {}
+    componentDidMount() {
+        
+    }
 
     render(props, state, context) {
         return(
-            preact.createElement("div", null)
+            preact.createElement("div", null, "")
         );
     }
 }

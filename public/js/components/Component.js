@@ -1,4 +1,4 @@
-import "/preact";
+import * as preact from "/preact";
 
 // apply bind(this) to every function in component class so "this" can be used inside member functions of the class
 export default class Component extends preact.Component {

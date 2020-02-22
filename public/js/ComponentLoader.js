@@ -1,4 +1,4 @@
-import "/preact";
+import * as preact from "/preact";
 
 export default class ComponentLoader {
     static load(App) {

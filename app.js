@@ -48,8 +48,8 @@ app.all("/js/components/*", site.component);
 
 // static content
 app.use(express.static(__dirname + "/public"));
-app.use("/preact", express.static(__dirname + "/node_modules/preact/dist/preact.js"));
-app.use("/preact.dev.js.map", express.static(__dirname + "/node_modules/preact/dist/preact.dev.map"));
+app.use("/preact", express.static(__dirname + "/node_modules/preact/dist/preact.module.js"));
+app.use("/preact.js.map", express.static(__dirname + "/node_modules/preact/dist/preact.module.js.map"));
 
 // handle 404
 app.use((req, res) => {
