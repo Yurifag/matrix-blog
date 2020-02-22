@@ -34,7 +34,7 @@ app.use((req, res, next) => {
     else {
         return next();
     }
-});https://www.google.com/search?client=firefox-b-d&q=localhost%3A80808
+});
 //send HSTS header
 app.use((req, res, next) => {
     if(config.web.https.enabled && config.web.https.hsts) res.header("Strict-Transport-Security", "max-age=31536000; includeSubdomains");
